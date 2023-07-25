@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarek Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="openScreen">
+        <img class="openScreenImg" src="./images/barcelona-city.jpg" alt="barcelona-city">
+        <div class="lordIconDiv">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+        src="https://cdn.lordicon.com/zvllgyec.json"
+        trigger="click"
+        onclick="show()"
+        colors="primary:#121331"
+        style="width:50px;height:50px">
+        </lord-icon>
+        </div>
+        <div class="nameDiv">
+            <h3 class="theName">T</h3>
+            <h3 class="theName">A</h3>
+            <h3 class="theName">R</h3>
+            <h3 class="theName">E</h3>
+            <h3 class="theName">K</h3>
+        </div>
+        <div class="toursDiv">
+            <h3 class="theName">T</h3>
+            <h3 class="theName">O</h3>
+            <h3 class="theName">U</h3>
+            <h3 class="theName">R</h3>
+            <h3 class="theName">S</h3>
+        </div>
+        <div id="titleDiv">
+            <h1 id="barcelonaTournaments"> بعض الفرص لا تعود مرّتين </h1>
+            <h4 id="SHAKESPEARE"> افسح الطريق لابنك واعطه الراية ليبني شخصيته  <br> . ومستقبله</h4>
+            <!-- <h4 id="Ronaldinho">“I learned all about life with a ball at my feet” – Ronaldinho</h4> -->
+        </div>
+        <div id="menuDiv">
+            <button class="menu" ><a style="font-size: 20px;text-decoration: none;color: white;padding: 5%;" href="#contact">تسجيل</a></button>
+            <button class="menu" id="blogButton"><a style="font-size: 20px;text-decoration: none;color: white;padding: 5%;" href="#blog">صور</a></button>
+            <button class="menu" ><a style="font-size: 20px;text-decoration: none;color: white;padding: 5%;" href="#tours">رحلاتنا</a></button>
+            <button class="menu" ><a style="font-size: 20px;text-decoration: none;color: white;padding: 5%;" href="/SignIn">تسجيل الدخول</a></button>    
+        
+        </div>
+    </div>
+    <section id="tours">
+        <!-- Tours Section -->
+        <img class="openScreenImg" id="toursSectionImg" style="filter: none;" src="./images/IMG_3447.jpg" alt="barcelona-city">
+        <div id="travelDiv1" class="travelDiv">
+            <img class="travelDivImg" src="./images/Untitled design.jpg" alt="">
+            <h1 class="h1travel" style="text-align: right;">مخيّمات تدريبية</h1>
+            <p >المخيّمات التدريبية باشراف المدربين الاسبان، تفتح للاعب المجال على التدرب تحت يدي مدرّبين على مستوى عالي <br> وهذا يرفع من معنويات اللاعب ويقوي ثقته بنفسه </p>
+            <a href="#contact" class="signButton">التسجيل</a>
+        </div>
+        <div id="travelDiv2" class="travelDiv">
+            <img class="travelDivImg" src="./images/moradbarcelona.jpg" alt="">
+            <h1 class="h1travel" style="text-align: right;">بطولات (טורנירים)</h1>
+            <p >بطولات (טורנירים) للفرق، مع فرق اوروبية، تمكن لاعبيك من اللعب ضد فرق اوروبية عالية المستوى <br> مما يرفع معنويات اللاعبين <br></p>
+            <a href="#contact" class="signButton">التسجيل</a>
+            
+        </div>
+        <div id="travelDiv3" class="travelDiv">
+            <img class="travelDivImg" src="./images/PHOTO-2023-01-10-15-35-52 2.jpg" alt="">
+            <h1 class="h1travel" style="text-align: right;">مخيّمات تدريبية (מחנה אימון)</h1>
+            <p > المخيّمات التدريبية(מחנה אימון) للفرق، لتجهيز الفريق واللاعبين قبل بداية الموسم، ليتجهزوا للموسم في افضل اجواء رياضية <br></p>
+            <a href="#contact" class="signButton">التسجيل</a>
+            
+        </div>
+    </section>
+    <section id="blog">
+        <!-- Blog Section -->
+        <!-- <img class="openScreenImg" style="filter: none;" src="./images/hiking-trail-in-the-snow.jpg" alt="barcelona-city"> -->
+        <h1 id="blogTitle">صور من الرحلات السابقة</h1>
+        <div id="blogDiv1">
+            
+        </div>
+    </section>
+    <section id="contact">
+        <!-- Contact us section-->
+        <img class="openScreenImg" style="filter: none;" src="./images/qatar.png" alt="barcelona-city">
+        <div id="contactTitle">
+            <h1 id="register">لبداية المشوار سجّل</h1>
+        </div>
+        <div id="nameEmail">
+            <input id="phoneNumber" style="text-align: right;" class="inputs" placeholder="رقم الهاتف*" type="number">
+            <input id="email" style="text-align: right;" class="inputs" placeholder="ايميل" type="email">
+            <input id="fullName" style="text-align: right;" class="inputs" placeholder="الاسم الكامل*" type="text">
+        </div>
+        <div id="selectDiv">
+        <select name="selector" id="selector">
+            <option value="click">**للخيارات اضغط هنا**</option>
+            <option value="tournament">بطولات (טורנירים)</option>
+            <option value="trainingCamp">مخيّمات تدريبية للفرق (מחנה אימון)</option>
+            <option value="spanishCamp">مخيّمات تدريبية فردية</option>
+        </select>
+    </div>
+        <div id="messageDiv">
+            <textarea style="text-align: right;" name="message" placeholder="... اذا كان لديك ايّ استفسار او تفاصيل (عدد الاولاد ...) اكتبه هنا" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div id="Up">
+            <a href="#">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/xdakhdsq.json"
+            trigger="click"
+            colors="primary:#121331"
+            style="width:50px;height:50px">
+        </lord-icon>
+    </a>
+    </div>
+    <div id="signMeButtonDiv">
+        <button onclick="signNow()" id="signYourSelfButton">التسجيل</button>
+    </div>
+    <a id="whatsapp" target="_blank" href="https://wa.me/972547313145">او اضغط هنا للتواصل معنا عبر واتساب</a>
+    </section>
+    <section id="copyRights">
+        <h3 id="copy" >2023 - Tarek Tours - Powered by Tarek Salame Dev</h3>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
