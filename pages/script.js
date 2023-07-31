@@ -48,10 +48,12 @@ const signNow = ()=>
 {
     let fullName = document.getElementById('fullName')
     let email = document.getElementById('email')
+    let makdema = document.getElementById('makdema')
     let phoneNumber = document.getElementById('phoneNumber')
     let selector = document.getElementById('selector')
     let message = document.getElementById('message')
     let signYourSelfButton = document.getElementById('signYourSelfButton')
+    console.log(fullName.value, email.value,makdema.value, phoneNumber.value, selector.value,message.value)
     if(selector != 'click')
     {
         fetch('/register',{
@@ -62,6 +64,7 @@ const signNow = ()=>
         body : JSON.stringify({
             fullName:fullName.value,
             email:email.value,
+            makdema:makdema.value,
             phoneNumber:phoneNumber.value,
             selector:selector.value,
             message:message.value
@@ -75,6 +78,7 @@ const signNow = ()=>
             fullName.style.display = 'none'
             email.style.display = 'none'
             phoneNumber.style.display = 'none'
+            makdema.style.display = 'none'
             selector.style.display = 'none'
             message.style.display = 'none'
             signYourSelfButton.style.display = 'none'
@@ -82,3 +86,40 @@ const signNow = ()=>
     })
 }}
 
+let optionsArr = [];
+let first = '05'
+for(let i = 0 ; i <= 9 ; i ++)
+{
+    optionsArr.push(first + i)
+}
+
+const options = (val)=>
+{
+    let makdema = document.getElementById('makdema');
+    let option = document.createElement('option');
+    makdema.appendChild(option);
+    option.value = val;
+    option.text = val;
+}
+
+optionsArr.map((val)=>
+{
+    options(val)
+})
+
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>
+    {
+        if(entry.isIntersecting)
+        {
+            entry.target.classList.add('show')
+        }else
+        {
+            entry.target.classList.remove('show')
+        }
+    })
+});
+
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el)=>{observer.observe(el)})

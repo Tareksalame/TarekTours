@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="SignInPageStyle.css">
 </head>
 <body>
+    <div id="imagesDiv">
+        <img class="images" src="./images/qatar.png" alt="qatar">
+        <img class="images" src="./images/Tourz.svg" alt="qatar">
+
+    </div>
     <h1 id="adminSignIn">دخول الادارة</h1>
     <input id="userName" class="Inputs" placeholder="اسم المستخدم" type="text">
     <input id="password" class="Inputs" placeholder="كلمة السر" type="password">
-    <button class="Buttons" id="SignInButton">الدخول</button>
+    <button class="Buttons" onclick="admin()" id="SignInButton">الدخول</button>
     <a href="/" id="backButton">الصفحة الرئيسية</a>
-
     <script src="SignInPageScript.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+:root
+{
+    --first-color : rgb(13, 18, 44);
+    --green-color : rgb(0, 125, 0);
+    --second-color: rgb(35, 80, 131);
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+
+body
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 1000px;
+    background: linear-gradient(180deg, var(--white-color) 30%, var(--second-color) 70%);
+}
+#title
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--green-color);
+    margin-bottom: 0px;
+}

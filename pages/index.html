@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="openScreen">
+    <div class="hidden" class="openScreen">
         <img class="openScreenImg" src="./images/barcelona-city.jpg" alt="barcelona-city">
         <div class="lordIconDiv">
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -48,7 +48,7 @@
         
         </div>
     </div>
-    <section id="tours">
+    <section class="hidden" id="tours">
         <!-- Tours Section -->
         <img class="openScreenImg" id="toursSectionImg" style="filter: none;" src="./images/IMG_3447.jpg" alt="barcelona-city">
         <div id="travelDiv1" class="travelDiv">
@@ -72,7 +72,7 @@
             
         </div>
     </section>
-    <section id="blog">
+    <section class="hidden" id="blog">
         <!-- Blog Section -->
         <!-- <img class="openScreenImg" style="filter: none;" src="./images/hiking-trail-in-the-snow.jpg" alt="barcelona-city"> -->
         <h1 id="blogTitle">صور من الرحلات السابقة</h1>
@@ -80,7 +80,7 @@
             
         </div>
     </section>
-    <section id="contact">
+    <section class="hidden" id="contact">
         <!-- Contact us section-->
         <img class="openScreenImg" style="filter: none;" src="./images/qatar.png" alt="barcelona-city">
         <div id="contactTitle">
@@ -116,9 +116,12 @@
     <div id="signMeButtonDiv">
         <button onclick="signNow()" id="signYourSelfButton">التسجيل</button>
     </div>
+    <select name="makdema" id="makdema">
+        <option value="none">Select*</option>
+    </select>
     <a id="whatsapp" target="_blank" href="https://wa.me/972547313145">او اضغط هنا للتواصل معنا عبر واتساب</a>
     </section>
-    <section id="copyRights">
+    <section class="hidden" id="copyRights">
         <h3 id="copy" >2023 - Tarek Tours - Powered by Tarek Salame Dev</h3>
     </section>
     <script src="script.js"></script>
